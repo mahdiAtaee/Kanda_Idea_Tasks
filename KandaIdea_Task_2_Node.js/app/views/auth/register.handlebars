@@ -1,0 +1,44 @@
+<div class="title">
+  <span class="title">ساخت حساب کاربری جدید</span>
+</div>
+<form action="/register" id="register_form" method="post">
+  <div class="input-wrapper">
+    <input type="text" id="firstName" name="first_name" placeholder=" " />
+    <label for="firstName">نام</label>
+    <div class="error"></div>
+  </div>
+  <div class="input-wrapper">
+    <input type="text" id="lastName" name="last_name" placeholder=" " />
+    <label for="lastName">نام خانوادگی</label>
+    <div class="error"></div>
+  </div>
+  <div class="input-wrapper">
+    <input type="text" id="username" name="username" placeholder=" " />
+    <label for="username">نام کاربری</label>
+    <div class="error"></div>
+  </div>
+  <div class="input-wrapper">
+    <input type="text" id="password" name="password" placeholder=" " />
+    <label for="password">کلمه عبور</label>
+    <div class="error"></div>
+  </div>
+  <div class="input-wrapper">
+    <input type="text" id="email" name="email" placeholder=" " />
+    <label for="email">ایمیل</label>
+    <div class="error"></div>
+  </div>
+  <div class="input-wrapper">
+    <input type="text" id="phoneNumber" name="phone_number" placeholder=" " />
+    <label for="phoneNumber">شماره موبایل</label>
+    <div class="error"></div>
+  </div>
+  <input type="submit" class="c-btn" value="!! ثبت نام" />
+</form>
+<div class="footer">
+  <div class="isAccount">
+    <span>آیا حساب کاربری دارید؟</span>
+  </div>
+  <a href="/" class="c-btn create-account"> ! وارد شوید</a>
+</div>
+
+{{! <script src="./assets/scripts/validationRegister.js"></script> }}

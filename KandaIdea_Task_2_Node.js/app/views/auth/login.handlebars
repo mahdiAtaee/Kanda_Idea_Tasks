@@ -1,0 +1,38 @@
+{{#if error}}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  {{error}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{{/if}}
+
+
+<div class="title">
+  <span class="first-title">کنداایده</span>
+  <span class="describe">تجربه مهندسی خلاق</span>
+</div>
+<form action="/login" id="login_form" method="post">
+  <div class="input-wrapper">
+    <input type="text" id="username" name="username" placeholder=" " />
+    <label for="username">نام کاربری</label>
+    <div class="error"></div>
+  </div>
+  <div class="input-wrapper">
+    <input type="text" id="password" name="password" placeholder=" " />
+    <label for="password">کلمه عبور</label>
+    <div class="error"></div>
+  </div>
+  <div class="input-wrapper">
+    <a href="#" class="remember-password">
+      آیا نام کاربری یا کلمه عبور را فراموش کرده اید؟
+    </a>
+  </div>
+  <input type="submit" class="c-btn" value="ورود به سامانه" />
+</form>
+<div class="footer">
+  <div class="isAccount">
+    <span>آیا حساب کاربری ندارید؟</span>
+  </div>
+  <a href="/register" class="c-btn create-account">ساخت حساب کاربری</a>
+</div>

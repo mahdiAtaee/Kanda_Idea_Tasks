@@ -1,0 +1,58 @@
+.overview .right-section img {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.overview {
+  margin-top: 4rem;
+}
+
+.overview .left-section {
+  margin-left: 2rem;
+  position: relative;
+}
+
+.overview .left-section::before {
+  content: "";
+  width: 10px;
+  height: 70%;
+  position: absolute;
+  left: -1.3rem;
+  top: 12px;
+  background: url("../img/arrow_down.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.overview .left-section .title {
+  font-family: "DINAlternate-Bold";
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.overview .left-section .describe {
+  font-size: 2rem;
+  font-family: "DINALTERNATE-Medium";
+  color: var(--purple);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.overview .left-section .content {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+@media screen and (max-width: 768px) {
+  .overview .left-section .title {
+    font-size: 1.2rem;
+  }
+  .overview .left-section .describe {
+    font-size: 1rem;
+  }
+  .overview .left-section .content {
+    font-size: 0.8rem;
+  }
+}

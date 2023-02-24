@@ -1,0 +1,94 @@
+footer {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+footer .footer-section-title {
+  font-size: 2rem;
+  font-family: "DINAlternate-Bold";
+  margin: 1rem 1.8rem;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+footer .first-footer-section {
+  position: relative;
+}
+
+footer .first-footer-section::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 30%;
+  background: url(../img/up-arrow.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  filter: opacity(0.6);
+}
+
+footer .last-footer-section {
+  position: relative;
+}
+
+footer .last-footer-section::after {
+  content: "";
+  position: absolute;
+  top: 1.3rem;
+  right: -2rem;
+  width: 60px;
+  height: 40px;
+  background: url("../img/second-logo.svg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3rem;
+}
+
+footer .social-media img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: 0.2s ease-in;
+}
+
+footer .social-media img:hover {
+  filter: none;
+}
+
+footer .social-media .social-media-button {
+  border: 1px solid var(--gray);
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  border-radius: 8px;
+  color: var(--gray);
+}
+
+footer .copyright {
+  text-align: center;
+  color: var(--gray);
+}
+
+@media screen and (max-width: 768px) {
+  footer .last-footer-section::after {
+    right: 0;
+  }
+  footer .social-media{
+    padding: 1rem 3rem;
+  }
+}

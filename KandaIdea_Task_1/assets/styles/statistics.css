@@ -1,0 +1,36 @@
+.statistics {
+  margin-top: 4rem;
+}
+.statistics .stats-wrapper {
+  display: flex;
+  align-items: baseline;
+  direction: rtl;
+  flex-wrap: wrap;
+}
+
+.statistics .stats-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 1rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.statistics .stats-wrapper .stat {
+  font-size: 2rem;
+  font-family: "DIN-Black";
+  color: var(--blue);
+}
+
+.statistics .stats-wrapper .stat-title {
+  color: var(--gray);
+  font-family: inherit;
+}
+
+.statistics .stats-wrapper .stat-title > span {
+  font-family: "DIN-Medium";
+  font-size: 1.1rem;
+  color: var(--gray);
+  font-weight: 600;
+}
